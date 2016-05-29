@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.developbox.tipster.MainActivity">
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:id="@+id/txtAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/txtLbl1"
+        android:layout_toStartOf="@+id/btnReset"
+        android:layout_toLeftOf="@+id/btnReset" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtPeople"
+        android:hint="@string/txtLbl2"
+        android:layout_alignTop="@+id/txtAmount"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignLeft="@+id/btnReset"
+        android:layout_alignStart="@+id/btnReset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtLbl3"
+        android:id="@+id/txtLBl3"
+        android:layout_below="@+id/txtPeople"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLBl3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op1"
+            android:id="@+id/op1"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op2"
+            android:id="@+id/op2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op3"
+            android:id="@+id/op3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/op4"
+            android:id="@+id/op4"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtTipOther"
+        android:layout_gravity="right"
+        android:hint="@string/op4"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/btnReset" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCalculate"
+        android:id="@+id/btnCalculate"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        style="@style/Base.Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReset"
+        android:id="@+id/btnReset"
+        android:layout_below="@+id/radioGroup"
+        android:layout_toLeftOf="@+id/btnCalculate"
+        android:layout_toStartOf="@+id/btnCalculate"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+</RelativeLayout>
