@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
@@ -119,8 +120,9 @@ public class MainActivity extends AppCompatActivity {
     // Calculate
     private void calculate(){
         Double billAmount;
-        Double totalPeople;
+        Integer totalPeople;
         Double percentage = null;
+
         boolean isError = false;
 
         if(!txtAmount.getText().toString().isEmpty()){
@@ -129,16 +131,18 @@ public class MainActivity extends AppCompatActivity {
             billAmount = null;
         }
         if(!txtPeople.getText().toString().isEmpty()){
-            totalPeople = Double.parseDouble(txtPeople.getText().toString());
+            String value = (txtPeople.getText().toString().indexOf(".") == -1) ? txtPeople.getText().toString() : txtPeople.getText().toString().substring(0, txtPeople.getText().toString().indexOf("."));
+            Log.e("VALUE", value);
+            totalPeople = Integer.parseInt(value);
         }else{
-            totalPeople = null;
+            totalPeople = 1;
         }
 
         if(billAmount < 1.0 || billAmount == null){
             showErrorAlert("Digite um valor válido em \"Valor Total\"", txtAmount.getId());
             isError = true;
         }
-        if(totalPeople < 1.0 || totalPeople == null){
+        if(totalPeople < 1.0){
             showErrorAlert("Digite um valor válido em \"Pessoas\"", txtPeople.getId());
             isError = true;
         }
