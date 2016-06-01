@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipster</string>
+    <string name="txtLbl1">Valeur totale</string>
+    <string name="txtLbl2">Numéro de personnes</string>
+    <string name="txtLbl3">Pourcentage de la pointe</string>
+
+    <string name="btnCalculate">Calculer</string>
+    <string name="btnReset">Nettoyer</string>
+
+    <string name="txtResult">Résultats</string>
+
+    <string name="txtTipAmount">Total de la pointe</string>
+    <string name="txtTotalToPay">Total à payer</string>
+    <string name="txtTipPerPerson">Comme par personne</string>
+
+    <string name="back">Retour</string>
+    <string name="op4">Autre</string>
+</resources>

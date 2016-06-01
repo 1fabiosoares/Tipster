@@ -4,9 +4,9 @@
     <string name="txtLbl2">Número de pessoas</string>
     <string name="txtLbl3">Porcentagem da gorjeta</string>
 
-    <string name="op1">10%</string>
-    <string name="op2">15%</string>
-    <string name="op3">20%</string>
+    <string name="op1" translatable="false">10%</string>
+    <string name="op2" translatable="false">15%</string>
+    <string name="op3" translatable="false">20%</string>
     <string name="op4">Outro</string>
 
     <string name="btnCalculate">Calcular</string>

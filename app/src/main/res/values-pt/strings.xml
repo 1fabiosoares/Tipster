@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tipster</string>
+    <string name="back">Voltar</string>
+    <string name="btnCalculate">Calcular</string>
+    <string name="btnReset">Limpar</string>
+    <string name="op4">Outro</string>
+    <string name="txtLbl1">Valor Total</string>
+    <string name="txtLbl2">Número de Pessoas</string>
+    <string name="txtLbl3">Porcentagem da gorgeta</string>
+    <string name="txtResult">Resultados</string>
+    <string name="txtTipAmount">Total de gorjeta</string>
+    <string name="txtTipPerPerson">Quanto por pessoa</string>
+    <string name="txtTotalToPay">Total à pagar</string>
+</resources>
